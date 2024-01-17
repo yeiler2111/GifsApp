@@ -1,0 +1,15 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3 class="text-light">gifsApp</h3>
+  <hr class="text-light" />
+  <div class="list-group list-reset">
+    <button
+      *ngFor="let item of Tags; index as i"
+      (click)="searchTag(item)"
+      class="list-group-items list-group-item-action rounded"
+    >
+      {{ item | titlecase }}
+    </button>
+  </div>
+
+
+</div>
